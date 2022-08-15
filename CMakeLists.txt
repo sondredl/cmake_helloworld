@@ -1,9 +1,7 @@
-
-
 cmake_minimum_required(VERSION 3.1)
 
-project(hello_World)
+project(arithmetics)
 
-add_executable(hello_World source/helloworld.cpp)
+add_executable(arithmetics source/arithmetics.cpp)
 
 set(EXECUTABLE_OUTPUT_PATH ../o)
