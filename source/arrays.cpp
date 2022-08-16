@@ -13,11 +13,14 @@ void setCities(){
 }
 
 
+int monthlyPercipitation[13];
+
 void setMonthlyPercipitation(){
     for(int i = 1; i <= 12; i++){
         monthlyPercipitation[i] = std::rand() % 100;
     }
 }
+
 void calculateTotalPercipitation(){
     int total = 0;
     for(int i = 1; i <= 12; i++){
@@ -25,6 +28,7 @@ void calculateTotalPercipitation(){
     }
     std::cout << "Total percipitation in city X: " << total << " mm"<< std::endl;
 }
+
 void getLimitPercipitation(){
     int min;
     int max;

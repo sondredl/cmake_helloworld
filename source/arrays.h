@@ -3,7 +3,6 @@
 
 #include "arrays.cpp"
 
-int monthlyPercipitation[13];
 
 void setCities();
 void setMonthlyPercipitation();

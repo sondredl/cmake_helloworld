@@ -6,6 +6,7 @@
 */
 #include "arithmetics.h"
 #include "arrays.h"
+#include "matrix.h"
 
 int main()
 {
@@ -26,11 +27,13 @@ int main()
     // int random = std::rand();
     // std::cout << "random number " << random << std::endl;
 
-    setMonthlyPercipitation();
-    calculateTotalPercipitation();
+    // setMonthlyPercipitation();
+    // calculateTotalPercipitation();
 
-    getLimitPercipitation();
-    numberOfMonthsAboveThreshold(50);
+    // getLimitPercipitation();
+    // numberOfMonthsAboveThreshold(50);
+
+     createCubeCoordinates();
 
     return 0;
 }
