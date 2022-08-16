@@ -1,2 +1,4 @@
+#include "source.cpp"
 
-void validate_date(int , int , int );
+
+void validate_date(int, int, int);

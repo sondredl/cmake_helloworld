@@ -1,6 +1,6 @@
-#include <iostream>
-#include <cmath>
-#include <string>
+// #include <iostream>
+// #include <cmath>
+// #include <string>
 
 #include "header.h"
 
@@ -8,20 +8,20 @@
 // #include "exersice_operators_flowcontrol.cpp"
 // #include "arithmetics"
 
-void main_while();
-void for_while();
-void main_for();
-void for_first_five_odd();
-void for_hundred_tofifty();
-void one_two_three();
-void prime_numbers();
-void word(); // changes case of word
-void print_leapYears(int, int);
-void leapYearSwitch();
+// void main_while();
+// void for_while();
+// void main_for();
+// void for_first_five_odd();
+// void for_hundred_tofifty();
+// void one_two_three();
+// void prime_numbers();
+// void word(); // changes case of word
+// void print_leapYears(int, int);
+// void leapYearSwitch();
 
 int main()
 {
-    validate_date(32, 1, 2020);
+     validate_date(32, 1, 2020);
     //  main_while();
     //  for_while();
     // main_for();

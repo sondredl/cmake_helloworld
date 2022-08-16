@@ -1,15 +1,25 @@
-#include "header.h"
+ #include <iostream>
+ #include <cmath>
+ #include <string>
+
+// #include "header.h"
 
 void validate_date(int day, int month, int year){
     if(year <= 2022){
         std::cout << "Year is valid" << std::endl;
-    } else { std::cout << "Year is not valid" << std::endl; }
+    } else { 
+        std::cout << "Year is not valid" << std::endl; }
+
     if(month >= 1 && month <= 12){
         std::cout << "Month is valid" << std::endl;
-    } else { std::cout << "Month is not valid" << std::endl; }
+    } else { 
+        std::cout << "Month is not valid" << std::endl; }
+
     if(day >= 1 && day <= 31){
         std::cout << "Day is valid" << std::endl;
-    } else { std::cout << "Day is not valid" << std::endl; }
+    } else { 
+        std::cout << "Day is not valid" << std::endl; }
+
     switch(month){
         case 1:
         case 2:
@@ -39,4 +49,5 @@ void validate_date(int day, int month, int year){
         //     std::cout << "Month is not valid" << std::endl;
         //     break;
             }
+            std::cout << "Date is valid" << std::endl;
 }
