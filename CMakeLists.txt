@@ -2,14 +2,15 @@ cmake_minimum_required(VERSION 3.1)
 
 project(cppWithIdris)
 
-add_library(
+# add_library(
     # obstacle_detection
     # headers/obstacle_detection.hpp
     # sources/obstacle_detection.cpp
-    source/header.h
-    source/source.cpp
+    # source/header.h
+    # source/arithmetics.h
+    # source/source.cpp
 
-)
+# )
 
 add_executable(main source/main.cpp)
 

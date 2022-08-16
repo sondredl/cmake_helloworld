@@ -4,6 +4,7 @@
 
 // #include "header.h"
 
+/*
 void validate_date(int day, int month, int year){
     if(year <= 2022){
         std::cout << "Year is valid" << std::endl;
@@ -51,3 +52,4 @@ void validate_date(int day, int month, int year){
             }
             std::cout << "Date is valid" << std::endl;
 }
+*/

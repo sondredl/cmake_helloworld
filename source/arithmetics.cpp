@@ -1,27 +1,49 @@
-// #include <iostream>
-// #include <cmath>
-// #include "whileloops"
-// #include "arithmetics"
+#include <iostream>
+#include <cmath>
+#include <string>
+void prime_numbers(){
+    for(int i = 2; i < 50; i++){
+        int prime = 0;
+        for(int j = 2; j < i; j++){
+            if(i % j == 0){
+                prime++;
+            }
+        }
+        if(prime == 0){
+            std::cout << i << std::endl;
+        }
+    }
+}
 
-int main()
-{
-    int a, b, c;
+bool isPrime(int n){
+    for(int i = 2; i < n; i++){
+        if(n % i == 0){
+            return 0;
+        }
+    }
+    return 1;
+}
 
-    std::cout << "enter the coefficient of x-squared, x, and units: ";
-    std::cin >> a >> b >> c;
+void iterator(int start, int end){
+    while(start < end){
+        if(isPrime(start)){
+            std::cout << start << std::endl;
+        }
+        start++;
+    }
+}
 
-    // double disc = (a * b) - (4 * a * c);
-    std::cout << "a + b + c = " << a + b + c << std::endl;
-    // if(disc < 0){
-    //     std::cerr << "Roots are imaginay " << std::endl;
+
+void getPrimeLimit(){
+    int limit;
+    std::cout << "Enter a number: ";
+    std::cin >> limit;
+    // std::cout << "Prime numbers less than " << limit << " are: " << std::endl;
+    // for(int i = 2; i < limit; i++){
+    //     if(isPrime(i)){
+    //         std::cout << i << " ";
+    //     }
     // }
-    // else{
-        // if{
-        // double root1 = (-a + sqrt(disc)) / (2 * a);
-        // double root2 = (-a - sqrt(disc)) / (2 * a);
-
-
-        // std::cout << "Roots are " << root1 << " and " << root2 << std::endl;
-    // }
-    // return 0;
+    // std::cout << std::endl;
+    iterator(1, limit);
 }
