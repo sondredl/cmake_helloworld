@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+
 void prime_numbers(){
     for(int i = 2; i < 50; i++){
         int prime = 0;
@@ -18,10 +19,10 @@ void prime_numbers(){
 bool isPrime(int n){
     for(int i = 2; i < n; i++){
         if(n % i == 0){
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 void iterator(int start, int end){

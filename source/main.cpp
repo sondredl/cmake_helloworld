@@ -5,31 +5,7 @@
 #include "loops.h"
 */
 #include "arithmetics.h"
-
-/*
-// #include "loops.cpp"
-// #include "exersice_operators_flowcontrol.cpp"
-// #include "arithmetics"
-
-// void main_while();
-// void for_while();
-// void main_for();
-// void for_first_five_odd();
-// void for_hundred_tofifty();
-// void one_two_three();
-// void prime_numbers();
-// void word(); // changes case of word
-// void print_leapYears(int, int);
-// void leapYearSwitch();
-void loops(){
-    one_two_three();
-    prime_numbers();
-    word(); // changes case of word
-    int start = 1991, end = 2020;
-    print_leapYears(start, end);
-    leapYearSwitch();
-}
-*/
+#include "arrays.h"
 
 int main()
 {
@@ -43,7 +19,18 @@ int main()
 
     // prime_numbers();
     // iterator(0, 30);
-    getPrimeLimit();
+    // getPrimeLimit();
+    // std::cout << "Hello World!\n";
+
+    // setCities();
+    // int random = std::rand();
+    // std::cout << "random number " << random << std::endl;
+
+    setMonthlyPercipitation();
+    calculateTotalPercipitation();
+
+    getLimitPercipitation();
+    numberOfMonthsAboveThreshold(50);
 
     return 0;
 }
