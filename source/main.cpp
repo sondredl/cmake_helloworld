@@ -33,7 +33,7 @@ int main()
     // getLimitPercipitation();
     // numberOfMonthsAboveThreshold(50);
 
-     createCubeCoordinates();
+    //  createCubeCoordinates();
 
     return 0;
 }
