@@ -12,7 +12,7 @@ void setCities(){
     }
 }
 
-int monthlyPercipitation[13];
+
 void setMonthlyPercipitation(){
     for(int i = 1; i <= 12; i++){
         monthlyPercipitation[i] = std::rand() % 100;
