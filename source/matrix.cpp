@@ -1,12 +1,16 @@
 #include <iostream>
 #include <string>
 
+int cubeCorners[8][8][8];
 
-int xValues[8] {0, 0, 1, 1, 0, 0, 1, 1};
-int yValues[8] {0, 0, 1, 1, 0, 0, 1, 1};
-int zValues[8] {0, 0, 1, 1, 0, 0, 1, 1};
+// int xValues[8] {0, 0, 1, 1, 0, 0, 1, 1};
+// int yValues[8] {0, 1, 1, 0, 0, 1, 1, 0};
+// int zValues[8] {1, 1, 0, 0, 1, 1, 0, 0};
+cubeCorners[0] {0, 0, 1, 1, 0, 0, 1, 1};
+cubeCorners[1] {0, 1, 1, 0, 0, 1, 1, 0};
+cubeCorners[2] {1, 1, 0, 0, 1, 1, 0, 0};
 
-int cubeCorners[xValues][zValues][yValues];
+// cubeCorners[xValues][zValues][yValues];
 
 void createCubeCoordinates(){
     int x;
