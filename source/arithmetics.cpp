@@ -1,5 +1,7 @@
-#include <iostream>
-#include <cmath>
+// #include <iostream>
+// #include <cmath>
+// #include "whileloops"
+// #include "arithmetics"
 
 int main()
 {

@@ -2,6 +2,7 @@
 
 # ./buildAll.bat
 
+rm -rf build
 cd build/
 #cd build
 
@@ -10,4 +11,6 @@ cmake --build . --config Release
 
 cd ../o/Release/
 
-./arithmetics.exe
+./main.exe
+
+
