@@ -68,6 +68,17 @@ double *findLargest(){
     return largest;
 }
 
+double &refLargest(const double &a, int size){
+    double *largest = randomDoubles;
+    for (int i = 0; i < 10; i++){
+        if (randomDoubles[i] > *largest){
+            largest = &randomDoubles[i];
+        }
+    }
+    // std::cout << "\nlargest double in array: " << *largest << std::endl;
+    return *largest;
+}
+
 double *findSmallest(){
     double *smallest = randomDoubles;
     for (int i = 0; i < 10; i++){
@@ -94,12 +105,20 @@ void printRandomDoubles(){
     for (int i = 0; i < 10; i++){
         std::cout << randomDoubles[i] << std::endl;
     }
-    double *largest = findLargest();
+    // double *largest = findLargest();
+    double largest = refLargest(randomDoubles[0], 10);
     double *smallest = findSmallest();
     double average = returnAverage(randomDoubles);
-    std::cout << "largets: " << *largest << std::endl;
+    std::cout << "largets: " << largest << std::endl;
     std::cout << "smallest: " << *smallest << std::endl;
     std::cout << "average: " << average << std::endl;
+}
+
+void refString(const std::string &a, int b, int c){
+    std::cout <<  a << std::endl;
+
+    std::cin >>  b >> c; 
+    std::cout << "you entered: " << b << " and " << c << std::endl;
 }
 /*
 can change the pointer, but cannot change the data it points to 

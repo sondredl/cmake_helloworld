@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf build
+rm o/Release/main.exe
 mkdir build
 cd build/
 

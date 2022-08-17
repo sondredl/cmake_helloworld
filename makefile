@@ -1,3 +1,5 @@
 clear
-g++ source/main.cpp source/header.h source/functionOverload.h source/loops.h source/arithmetics.h
-./a.exe
+rm fb.exe
+cd source/
+g++ -o fb main.cpp footballer.h
+./fb.exe
