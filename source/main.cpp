@@ -12,6 +12,12 @@
 int main()
 {
     helloWorld();
+
+    int a[10] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    f(a);
+    arrayIndexingForLoop(a); // these two loops are equivalent
+    arrayDirectForLoop(a);
+
      // validate_date(32, 1, 2020);
      // main_while();
 
