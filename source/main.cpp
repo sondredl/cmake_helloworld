@@ -2,12 +2,26 @@
 #include <string>
 
  #include "footballer.h"
+ #include "BankAccount.h"
 // #include "footballer.cpp"
+void footballers();
+void banking();
 
 int main()
 {
+    // footballers();
+    banking();
+
+    return 0;
+}
+void banking(){ 
+    BankAccount *John = new BankAccount("John", 100);
+    John->printBalance();
+
+}
+
+void footballers(){
     Footballer rob;
-    // rob.DisplayFootballer();
     rob.setData("Rob", 13, GOALKEEPER, 3);
     rob.printFootballer();
 
@@ -17,10 +31,8 @@ int main()
 
     Footballer *gus = new Footballer("Gus", 1, MIDFIELDER, 0);
     gus->printFootballer();
-    // Gus->printFootballer();
 
     bob->~Footballer();
     gus->~Footballer();
 
-    return 0;
 }
