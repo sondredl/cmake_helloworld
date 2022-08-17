@@ -1,15 +1,17 @@
 #!/bin/bash
 
-rm -rf build
-rm o/Release/main.exe
-mkdir build
-cd build/
+rm -rf build/*
+#rm o/Release/main.exe
+rm o/main.exe
+#cd build/
 
-cmake ../CMakeLists.txt
-cmake --build . --config Release
+#cmake ../CMakeLists.txt
+cmake . -B build -GNinja 		# builds .o files in build/
+cmake --build build --config Release 	# compiles .o files in build/ to specified folder in CMakeLists
 
-cd ../o/Release/
+#cd ../o/Release/
 
-./main.exe
+#./o/Release/main.exe
+./o/main.exe
 
 
