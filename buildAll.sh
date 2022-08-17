@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# ./buildAll.bat
-
 rm -rf build
+mkdir build
 cd build/
-#cd build
 
 cmake ../CMakeLists.txt
 cmake --build . --config Release

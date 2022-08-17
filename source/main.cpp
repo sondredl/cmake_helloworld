@@ -3,13 +3,15 @@
 #include "switch.h"
 #include "functionOverload.h"
 #include "loops.h"
-*/
 #include "arithmetics.h"
 #include "arrays.h"
 #include "matrix.h"
+*/
+#include "pointer.h"
 
 int main()
 {
+    helloWorld();
      // validate_date(32, 1, 2020);
      // main_while();
 
