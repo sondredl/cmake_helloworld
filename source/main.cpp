@@ -17,6 +17,7 @@ int main()
 void banking(){ 
     BankAccount *John = new BankAccount("John", 100);
     John->printBalance();
+    John->deposit(50);
 
 }
 
