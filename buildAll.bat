@@ -1,4 +1,5 @@
-Rem rm -rf build
+del build\*.*
+del o\Release\main.exe 
 
 set cmake_build_path="build"
 cd %cmake_build_path%

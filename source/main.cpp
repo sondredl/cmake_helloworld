@@ -13,13 +13,18 @@ int main()
 {
     helloWorld();
 
-    int a[10] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-    f(a);
-    arrayIndexingForLoop(a); // these two loops are equivalent
-    arrayDirectForLoop(a);
+    const int a[10] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    // f(a);
+    // arrayIndexingForLoop(a); // these two loops are equivalent
+    // arrayDirectForLoop(a);  // exersice 5.1
 
-     // validate_date(32, 1, 2020);
-     // main_while();
+    fillRandomDoubles();
+    printRandomDoubles();
+    // findLargest();
+    // findSmallest();
+
+    // validate_date(32, 1, 2020);
+    // main_while();
 
     //  for_while();
     // main_for();
