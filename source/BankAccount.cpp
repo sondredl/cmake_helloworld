@@ -1,5 +1,7 @@
 #include "BankAccount.h"
 
+int BankAccount::nextId = 0; // remember to initialize static variables, but without the "static"
+
 BankAccount::BankAccount() {
     balance = 0;
 }
@@ -16,6 +18,9 @@ BankAccount::~BankAccount() {
     " is destroyed!" << std::endl;
 }
 
+int BankAccount::getNextId() {
+    return nextId;
+}
 void BankAccount::setBalance(double balance) {
     this->balance = balance;
     BankAccount::printBalance();

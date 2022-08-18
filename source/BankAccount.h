@@ -3,6 +3,12 @@
 
 #include <iostream>
 
+/*! \brief Brief description.
+ *         Brief description continued.
+ *
+ *  Detailed description starts here.
+ */
+
 class BankAccount {
 public:
     BankAccount();
@@ -14,16 +20,20 @@ public:
 
     std::string getAccountHolder();
     double getBalance();
+    int getNextId();
 
     void deposit(double);
     void withdraw(double);
 
     void printBalance();
+    
+    static const double OVERDRAFT_LIMIT;
 
 private:
     double accountFees;
     double balance;
     std::string accountHolder;
+    static int nextId;
 };
 
 
