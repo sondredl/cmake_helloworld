@@ -15,31 +15,31 @@ Person::~Person()
 void Person::setTimeOfArrival(){}
 void Person::getTimeOfArrival(){}
 
-Student::Student()
-{}
+// Student::Student()
+// {}
 // Student::Student(std::string name, int age, int grade)
 // {
 //     // this->name = name;
 //     // this->age = age; 
 //     this->grade = grade; 
 // }
-Student::~Student()
-{}
-void Student::setTimeOfArrival(){
-    std::cout << "derived Student::setTimeOfArrival" << std::endl;
-    }
-void Student::getTimeOfArrival(){
-    std::cout << "derived getTimeOfArrival" << std::endl; // return timeOfArrival; 
-    }
-void Student::setGrade()
-{
-    // this->grade = grade; 
-    std::cout << "student::getGrade" << std::endl;
-}
-int Student::getGrade()
-{
-     return grade; 
-}
+// Student::~Student()
+// {}
+// void Student::setTimeOfArrival(){
+//     std::cout << "derived Student::setTimeOfArrival" << std::endl;
+//     }
+// void Student::getTimeOfArrival(){
+//     std::cout << "derived getTimeOfArrival" << std::endl; // return timeOfArrival; 
+//     }
+// void Student::setGrade()
+// {
+//     // this->grade = grade; 
+//     std::cout << "student::getGrade" << std::endl;
+// }
+// int Student::getGrade()
+// {
+//      return grade; 
+// }
 // Employee::Employee()
 // {}
 // Employee::Employee(std::string name, int age, int salary)

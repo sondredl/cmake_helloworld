@@ -18,18 +18,18 @@ private:
     int timeOfArrival;
 };
 
-class Student : public Person {
-public:
-    Student();
-    // Student(std::string name, int age, int grade);
-    ~Student();
-    // void setTimeOfArrival(int);
-    // int getTimeOfArrival();
-    void setGrade();
-    void getGrade();
-private:
-    int grade = 2;
-};  
+// class Student : public Person {
+// public:
+//     Student();
+//     // Student(std::string name, int age, int grade);
+//     ~Student();
+//     // void setTimeOfArrival(int);
+//     // int getTimeOfArrival();
+//     void setGrade();
+//     void getGrade();
+// private:
+//     int grade = 2;
+// };  
 // class Employee : public Person {
 // public:
 //     Employee();
